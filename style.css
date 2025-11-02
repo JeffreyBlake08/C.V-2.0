@@ -1,0 +1,135 @@
+/* Basic colour tokens and layout constants */
+:root {
+  --bg: #fffbf7;     /* page background */
+  --muted: #666;     /* secondary / muted text colour */
+  --text: #222;      /* main body text colour */
+  --card: #e0e0e0;   /* background colour for skill cards */
+  --max-width: 900px;
+}
+
+/* Global text and background */
+html,
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header block */
+.site-header {
+  background-color: var(--bg);
+}
+
+/* Name at the top of the page */
+.site-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Contact line beneath the name */
+.site-header h3 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin: 0 0 0.5rem 0;
+}
+
+/* Contact block in cover letter header */
+.details {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+/* Subheading line under contact info */
+.Intro {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+/* Profile photo */
+.portrait {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  object-fit: cover;
+}
+
+/* Header navigation links */
+.top-nav a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Reusable grey cards in the Skills section */
+.skill-card {
+  background-color: var(--card);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Section headings */
+h2,
+.h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.job-header {
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Lists in Experience and Education */
+ul {
+  padding-left: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.6rem;
+}
+
+/* Cover letter body area */
+.letter-content {
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Date line on the cover letter */
+.letter-content .date {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* External link style (LinkedIn, etc.) */
+a.external {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+a.external:hover {
+  text-decoration: underline;
+}
+
+/* Footer spacing */
+footer {
+  min-height: 40px;
+}
