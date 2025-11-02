@@ -5,6 +5,7 @@
   --max-width: 900px;
 }
 
+/* Global layout */
 html,
 body {
   background-color: var(--bg);
@@ -21,24 +22,26 @@ body {
   background-color: var(--bg);
 }
 
+/* Name styling */
 .site-header h1 {
   font-size: 1.6rem;
   margin-bottom: 0.25rem;
 }
 
+/* Contact line */
 .details {
   font-size: 0.9rem;
   color: var(--muted);
 }
 
-/* Tagline style for CV */
+/* Subheading under contact info (CV only) */
 .Intro {
   font-size: 0.95rem;
   font-style: italic;
   color: var(--muted);
 }
 
-/* Portrait photo */
+/* Profile photo */
 .portrait {
   width: 100px;
   height: 100px;
@@ -47,12 +50,17 @@ body {
   object-fit: cover;
 }
 
-/* Shared content styling */
+/* Main content */
 .content {
   line-height: 1.6;
-  color: var(--text);
 }
 
+/* Section card-style backgrounds */
+.section-block {
+  background-color: var(--bg);
+}
+
+/* Headings */
 h2,
 .h4 {
   margin-top: 1.5rem;
@@ -60,6 +68,7 @@ h2,
   color: var(--text);
 }
 
+/* Lists */
 ul {
   padding-left: 1rem;
   line-height: 1.5;
@@ -70,6 +79,10 @@ li {
   margin-bottom: 0.6rem;
 }
 
-footer {
+/* Footer — same background as body, only line visible */
+.site-footer {
+  background-color: var(--bg);
+  border-top: 1px solid #ccc;
+  color: var(--muted);
   min-height: 40px;
 }
