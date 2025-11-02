@@ -1,215 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <!-- Makes layout responsive on mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My CV — Jeffrey Blake</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS (via CDN) for grid and utility classes -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
+    <title>My CV — Jeffrey Blake</title>
 
-  <!-- Custom stylesheet overrides -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<body>
-  <!--
-    Header section for the CV.
-    Uses the Bootstrap grid to arrange content into two columns:
-    - Left column: name, contact, summary line, links, navigation
-    - Right column: profile image
-    On smaller screens these columns stack vertically.
-  -->
-  <header class="site-header py-4">
-    <div class="container-lg">
-      <div class="row align-items-start gy-3">
-        <!-- Left column -->
-        <div class="col-12 col-lg-9">
-          <h1 class="mb-1">Jeffrey Blake</h1>
+    <!-- Custom site styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-          <h3 class="h6 fw-normal text-muted mb-2">
-            Email: 08blakejeffrey@gmail.com &nbsp;|&nbsp; No: +353 87 666 6980
-          </h3>
+  <body class="bg-light text-dark">
+    <!-- Header / contact -->
+    <header class="py-4 border-bottom bg-white site-header">
+      <div class="container-lg">
+        <div class="row align-items-start gy-3">
+          <!-- Left column -->
+          <div class="col-12 col-lg-9">
+            <h1 class="mb-1 h2 fw-bold">Jeffrey Blake</h1>
 
-          <p class="Intro fst-italic text-muted mb-2">
-            Aspiring Web Developer
-          </p>
+            <p class="mb-1 small text-muted">
+              <span class="me-2">Email: 08blakejeffrey@gmail.com</span>
+              <span class="me-2">|</span>
+              <span>No: +353 87 666 6980</span>
+            </p>
 
-          <p class="mb-2">
-            <a
-              class="external"
-              href="https://www.linkedin.com/in/jeffreyblake/"
-              target="_blank"
-              rel="noopener"
-              >LinkedIn</a
+            <p class="fst-italic text-muted mb-2">
+              Aspiring Web Developer
+            </p>
+
+            <p class="mb-2">
+              <a
+                class="link-primary text-decoration-none"
+                href="https://www.linkedin.com/in/jeffreyblake/"
+                target="_blank"
+                rel="noopener"
+              >
+                LinkedIn
+              </a>
+            </p>
+
+            <!-- Page nav -->
+            <nav
+              class="d-flex flex-wrap align-items-center gap-2 small"
+              aria-label="Page navigation"
             >
-          </p>
-
-          <!-- Page navigation -->
-          <nav class="top-nav small">
-            <a href="index.html" class="me-2">Cover Letter</a> |
-            <a href="cv.html" class="ms-2">CV</a>
-          </nav>
-        </div>
-
-        <!-- Right column -->
-        <div class="col-12 col-lg-3 text-lg-end text-center">
-          <img
-            class="portrait"
-            src="Profile.jpg"
-            alt="Portrait of Jeffrey Blake"
-          />
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!--
-    Main CV content.
-    Sections:
-    - Skills
-    - Experience
-    - Education
-    Each section sits inside a Bootstrap container for consistent width and spacing.
-  -->
-  <main class="content container-lg pb-5">
-    <!-- SKILLS -->
-    <section class="mb-4">
-      <h2 class="h4 mb-3">Skills</h2>
-
-      <!--
-        Row of three skill cards.
-        col-12: full width on mobile
-        col-md-4: three columns across on medium+ screens
-        g-3: spacing between columns
-      -->
-      <div class="row g-3">
-        <div class="col-12 col-md-4">
-          <div class="skill-card h-100 p-3 rounded">
-            <p class="mb-0">
-              Driven with a proven track record of outbound pipeline generation,
-              strategic campaign execution, and end-to-end management of renewal
-              and expansion opportunities.
-            </p>
+              <a
+                href="index.html"
+                class="link-dark text-decoration-none"
+              >
+                Cover Letter
+              </a>
+              <span class="text-muted">|</span>
+              <a
+                href="cv.html"
+                class="link-dark text-decoration-none fw-semibold"
+                aria-current="page"
+              >
+                CV
+              </a>
+            </nav>
           </div>
-        </div>
 
-        <div class="col-12 col-md-4">
-          <div class="skill-card h-100 p-3 rounded">
-            <p class="mb-0">
-              Expert communicator and influencer, experienced in confidently
-              engaging and presenting insights to senior leadership, managing
-              complex stakeholder relationships, and driving commercial
-              negotiations.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <div class="skill-card h-100 p-3 rounded">
-            <p class="mb-0">
-              Proactive learner with a deep interest in emerging SaaS
-              technologies, particularly AI and Generative AI tools (including
-              LLMs, NLP, and automation solutions), and their practical
-              application in pipeline acceleration and customer engagement.
-            </p>
+          <!-- Right column -->
+          <div class="col-12 col-lg-3 text-lg-end text-center">
+            <img
+              class="portrait rounded border img-fluid"
+              src="Profile.jpg"
+              alt="Portrait of Jeffrey Blake"
+              style="max-width: 120px; height: auto;"
+            />
           </div>
         </div>
       </div>
+    </header>
 
-      <!--
-        Full-width supporting skill card below the row above.
-      -->
-      <div class="row g-3 mt-3">
-        <div class="col-12">
-          <div class="skill-card h-100 p-3 rounded">
-            <p class="mb-0">
-              Analytical and decisive, skilled at handling complex and ambiguous
-              situations through systematic prioritisation, data-led
-              decision-making, and clear strategic planning aligned with
-              organisational objectives.
-            </p>
+    <!-- Content -->
+    <main class="container-lg py-5">
+      <!-- Skills -->
+      <section class="mb-5">
+        <h2 class="h4 mb-3 fw-semibold">Skills</h2>
+
+        <div class="row g-3">
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-3 rounded bg-white border">
+              <p class="mb-0 small">
+                Driven with a proven track record of outbound pipeline
+                generation, strategic campaign execution, and end-to-end
+                management of renewal and expansion opportunities.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-3 rounded bg-white border">
+              <p class="mb-0 small">
+                Expert communicator and influencer, experienced in confidently
+                engaging and presenting insights to senior leadership,
+                managing complex stakeholder relationships, and driving
+                commercial negotiations.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="h-100 p-3 rounded bg-white border">
+              <p class="mb-0 small">
+                Proactive learner with a deep interest in emerging SaaS
+                technologies, particularly AI and Generative AI tools
+                (including LLMs, NLP, and automation solutions), and their
+                practical application in pipeline acceleration and customer
+                engagement.
+              </p>
+            </div>
           </div>
         </div>
+
+        <div class="row g-3 mt-3">
+          <div class="col-12">
+            <div class="h-100 p-3 rounded bg-white border">
+              <p class="mb-0 small">
+                Analytical and decisive, skilled at handling complex and
+                ambiguous situations through systematic prioritisation,
+                data-led decision-making, and clear strategic planning aligned
+                with organisational objectives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="mb-5">
+        <h2 class="h4 mb-3 fw-semibold">Experience</h2>
+
+        <article class="mb-4">
+          <header class="mb-2">
+            <p class="fw-bold mb-0">
+              Pendo, Senior Business Development Representative, Dublin
+              <span class="text-muted">| Jan 2023 – Present</span>
+            </p>
+          </header>
+
+          <ul class="ps-3 small">
+            <li class="mb-2">
+              Promoted following the success of a strategic partnerships
+              assignment, with continued ownership across partner-influenced
+              pipeline, mid-market GTM strategy, and outbound innovation.
+            </li>
+
+            <li class="mb-2">
+              Appointed AI Pipeline Generation Advisor, designing and delivering
+              scalable outbound frameworks across EMEA. Led global enablement on
+              AI-led personalisation strategies that drove a 20% uplift in
+              conversion and were adopted across the GTM organisation.
+            </li>
+
+            <li class="mb-2">
+              Continued to drive partner-aligned pipeline initiatives, applying
+              AI insights and co-sell strategies to increase pipeline velocity
+              and improve performance across the EMEA partner ecosystem.
+            </li>
+
+            <li class="mb-2">
+              Delivered strategic pipeline reviews to GTM and partner
+              leadership, shaping outbound priorities, identifying growth gaps,
+              and aligning regional activity to commercial goals.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Education -->
+      <section class="mb-5">
+        <h2 class="h4 mb-3 fw-semibold">Education</h2>
+
+        <ul class="ps-3 small">
+          <li class="mb-3">
+            <strong>2023 – Financial Analysis and Management Accounting</strong>
+            — The London School of Economics<br />
+            Grade: First class honours
+          </li>
+
+          <li class="mb-3">
+            <strong>2015–2019 – Bachelor of Business Studies and Economics (Hons)</strong>,
+            Dublin City University<br />
+            Grade: Upper second-class honours
+          </li>
+
+          <li class="mb-3">
+            <strong>2009–2014 – Glenstal Abbey School, Limerick, Ireland</strong><br />
+            Grade: 480 Points (Top 10% in Ireland)
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-white border-top text-center small text-muted">
+      <div class="container">
+        <p class="mb-0">© Jeffrey Blake</p>
       </div>
-    </section>
+    </footer>
 
-    <!-- EXPERIENCE -->
-    <section class="mb-4">
-      <h2 class="h4 mb-3">Experience</h2>
-
-      <p class="job-header fw-bold mb-2">
-        Pendo, Senior Business Development Representative, Dublin |
-        Jan 2023 – Present
-      </p>
-
-      <ul class="ps-3">
-        <li class="mb-2">
-          Promoted following the success of a strategic partnerships assignment,
-          with continued ownership across partner-influenced pipeline,
-          mid-market GTM strategy, and outbound innovation.
-        </li>
-
-        <li class="mb-2">
-          Appointed AI Pipeline Generation Advisor, designing and delivering
-          scalable outbound frameworks across EMEA. Led global enablement on
-          AI-led personalisation strategies that drove a 20% uplift in
-          conversion and were adopted across the GTM organisation.
-        </li>
-
-        <li class="mb-2">
-          Continued to drive partner-aligned pipeline initiatives, applying AI
-          insights and co-sell strategies to increase pipeline velocity and
-          improve performance across the EMEA partner ecosystem.
-        </li>
-
-        <li class="mb-2">
-          Delivered strategic pipeline reviews to GTM and partner leadership,
-          shaping outbound priorities, identifying growth gaps, and aligning
-          regional activity to commercial goals.
-        </li>
-      </ul>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="mb-4">
-      <h2 class="h4 mb-3">Education</h2>
-
-      <ul class="ps-3">
-        <li class="mb-2">
-          2023 – Financial Analysis and Management Accounting — The London
-          School of Economics<br />
-          Grade: First class honours
-        </li>
-
-        <li class="mb-2">
-          2015–2019 – Bachelor of Business Studies and Economics (Hons), Dublin
-          City University<br />
-          Grade: Upper second-class honours
-        </li>
-
-        <li class="mb-2">
-          2009–2014 – Glenstal Abbey School, Limerick, Ireland<br />
-          Grade: 480 Points (Top 10% in Ireland)
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Footer spacer -->
-  <footer class="py-4"></footer>
-
-  <!-- Bootstrap JS bundle -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-</body>
+    <!-- Bootstrap JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
