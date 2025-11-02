@@ -1,11 +1,11 @@
 :root {
-  --bg: #fffbf7;
-  --muted: #666;
-  --text: #222;
-  --max-width: 900px;
+  --bg: #fffbf7;           /* soft cream background */
+  --muted: #666;           /* muted/secondary text */
+  --text: #222;            /* main text */
+  --border: #d8d8d8;       /* soft grey border */
 }
 
-/* Global layout */
+/* Global page look */
 html,
 body {
   background-color: var(--bg);
@@ -15,74 +15,111 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* Shared header */
+/* Header band (top of both pages) */
 .site-header {
   background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
 }
 
-/* Name styling */
+/*
+Responsive header alignment:
+- On mobile: everything centered (text + portrait)
+- On large screens: text left, photo right
+*/
+.header-text {
+  text-align: center;
+}
+.header-photo {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .header-text {
+    text-align: left;
+  }
+  .header-photo {
+    text-align: right;
+  }
+}
+
 .site-header h1 {
   font-size: 1.6rem;
   margin-bottom: 0.25rem;
+  color: var(--text);
 }
 
-/* Contact line */
 .details {
   font-size: 0.9rem;
   color: var(--muted);
 }
 
-/* Subheading under contact info (CV only) */
 .Intro {
   font-size: 0.95rem;
   font-style: italic;
   color: var(--muted);
+  margin-bottom: 0.5rem;
 }
 
-/* Profile photo */
+/* Nav links inherit text color */
+a.link-dark {
+  color: var(--text) !important;
+}
+
+/* Photo */
 .portrait {
   width: 100px;
   height: 100px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
   object-fit: cover;
 }
 
-/* Main content */
+/* Main page content wrapper */
 .content {
-  line-height: 1.6;
+  background-color: var(--bg);
+  padding-bottom: 2rem;
 }
 
-/* Section card-style backgrounds */
+/*
+Reusable card-style wrapper for:
+- cover letter block
+- skill cards
+- experience / education blocks
+*/
 .section-block {
   background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Headings */
+/* Headings in sections */
 h2,
 .h4 {
+  color: var(--text);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
-  color: var(--text);
 }
 
 /* Lists */
 ul {
   padding-left: 1rem;
-  line-height: 1.5;
   margin-bottom: 0;
+  line-height: 1.5;
 }
 
 li {
   margin-bottom: 0.6rem;
 }
 
-/* Footer — same background as body, only line visible */
+/* Footer bar at bottom of both pages */
 .site-footer {
   background-color: var(--bg);
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--border);
   color: var(--muted);
+  text-align: center;
   min-height: 40px;
 }
