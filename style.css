@@ -1,13 +1,10 @@
-/* Colour and spacing */
 :root {
   --bg: #fffbf7;
   --muted: #666;
   --text: #222;
-  --card: #e0e0e0;
   --max-width: 900px;
 }
 
-/* Global text + background */
 html,
 body {
   background-color: var(--bg);
@@ -19,33 +16,29 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Header background follows the page tone */
+/* Shared header */
 .site-header {
   background-color: var(--bg);
 }
 
-/* Name at the top */
 .site-header h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.25rem;
 }
 
-/* Contact line under the name */
 .details {
   font-size: 0.9rem;
   color: var(--muted);
-  margin-bottom: 0.5rem;
 }
 
-/* Optional short tagline under the contact info */
+/* Tagline style for CV */
 .Intro {
   font-size: 0.95rem;
   font-style: italic;
   color: var(--muted);
-  margin-bottom: 0.5rem;
 }
 
-/* Profile photo */
+/* Portrait photo */
 .portrait {
   width: 100px;
   height: 100px;
@@ -54,7 +47,12 @@ body {
   object-fit: cover;
 }
 
-/* Section headings */
+/* Shared content styling */
+.content {
+  line-height: 1.6;
+  color: var(--text);
+}
+
 h2,
 .h4 {
   margin-top: 1.5rem;
@@ -62,7 +60,6 @@ h2,
   color: var(--text);
 }
 
-/* Lists in Experience / Education */
 ul {
   padding-left: 1rem;
   line-height: 1.5;
@@ -73,7 +70,6 @@ li {
   margin-bottom: 0.6rem;
 }
 
-/* Footer height floor */
 footer {
   min-height: 40px;
 }
