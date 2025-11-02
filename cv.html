@@ -6,7 +6,7 @@
 
     <title>My CV — Jeffrey Blake</title>
 
-    <!-- Bootstrap CSS (CDN) -->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,111 +14,80 @@
       crossorigin="anonymous"
     />
 
-    <!-- Custom site styles -->
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-light text-dark">
-    <!-- Header / contact -->
-    <header class="py-4 border-bottom bg-white site-header">
+  <body>
+    <!-- Shared header -->
+    <header class="site-header border-bottom py-4 bg-white">
       <div class="container-lg">
         <div class="row align-items-start gy-3">
           <!-- Left column -->
           <div class="col-12 col-lg-9">
             <h1 class="mb-1 h2 fw-bold">Jeffrey Blake</h1>
 
-            <p class="mb-1 small text-muted">
-              <span class="me-2">Email: 08blakejeffrey@gmail.com</span>
-              <span class="me-2">|</span>
-              <span>No: +353 87 666 6980</span>
+            <p class="small text-muted mb-1">
+              <span class="me-2 d-block d-lg-inline">08blakejeffrey@gmail.com</span>
+              <span class="text-muted d-none d-lg-inline me-2">|</span>
+              <span class="d-block d-lg-inline">+353 87 666 6980</span>
             </p>
 
-            <p class="fst-italic text-muted mb-2">
-              Aspiring Web Developer
-            </p>
+            <p class="fst-italic text-muted mb-2">Aspiring Web Developer</p>
 
-            <p class="mb-2">
-              <a
-                class="link-primary text-decoration-none"
-                href="https://www.linkedin.com/in/jeffreyblake/"
-                target="_blank"
-                rel="noopener"
-              >
-                LinkedIn
-              </a>
-            </p>
-
-            <!-- Page nav -->
-            <nav
-              class="d-flex flex-wrap align-items-center gap-2 small"
-              aria-label="Page navigation"
-            >
-              <a
-                href="index.html"
-                class="link-dark text-decoration-none"
-              >
-                Cover Letter
-              </a>
+            <!-- Navigation -->
+            <nav class="d-flex flex-wrap align-items-center gap-2 small">
+              <a href="index.html" class="link-dark text-decoration-none">Cover Letter</a>
               <span class="text-muted">|</span>
-              <a
-                href="cv.html"
-                class="link-dark text-decoration-none fw-semibold"
-                aria-current="page"
-              >
-                CV
-              </a>
+              <a href="cv.html" class="link-dark text-decoration-none fw-semibold">CV</a>
             </nav>
           </div>
 
-          <!-- Right column -->
+          <!-- Right column: portrait -->
           <div class="col-12 col-lg-3 text-lg-end text-center">
             <img
-              class="portrait rounded border img-fluid"
               src="Profile.jpg"
               alt="Portrait of Jeffrey Blake"
-              style="max-width: 120px; height: auto;"
+              class="portrait rounded border img-fluid"
             />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Content -->
-    <main class="container-lg py-5">
+    <!-- Main CV content -->
+    <main class="content container-lg py-5">
       <!-- Skills -->
       <section class="mb-5">
         <h2 class="h4 mb-3 fw-semibold">Skills</h2>
 
         <div class="row g-3">
           <div class="col-12 col-md-4">
-            <div class="h-100 p-3 rounded bg-white border">
+            <div class="h-100 p-3 rounded bg-white border shadow-sm">
               <p class="mb-0 small">
-                Driven with a proven track record of outbound pipeline
-                generation, strategic campaign execution, and end-to-end
-                management of renewal and expansion opportunities.
+                Driven with a proven track record of outbound pipeline generation, strategic
+                campaign execution, and end-to-end management of renewal and expansion
+                opportunities.
               </p>
             </div>
           </div>
 
           <div class="col-12 col-md-4">
-            <div class="h-100 p-3 rounded bg-white border">
+            <div class="h-100 p-3 rounded bg-white border shadow-sm">
               <p class="mb-0 small">
-                Expert communicator and influencer, experienced in confidently
-                engaging and presenting insights to senior leadership,
-                managing complex stakeholder relationships, and driving
-                commercial negotiations.
+                Expert communicator and influencer, experienced in confidently engaging and
+                presenting insights to senior leadership, managing complex stakeholder
+                relationships, and driving commercial negotiations.
               </p>
             </div>
           </div>
 
           <div class="col-12 col-md-4">
-            <div class="h-100 p-3 rounded bg-white border">
+            <div class="h-100 p-3 rounded bg-white border shadow-sm">
               <p class="mb-0 small">
-                Proactive learner with a deep interest in emerging SaaS
-                technologies, particularly AI and Generative AI tools
-                (including LLMs, NLP, and automation solutions), and their
-                practical application in pipeline acceleration and customer
-                engagement.
+                Proactive learner with a deep interest in emerging SaaS technologies,
+                particularly AI and Generative AI tools, and their application in pipeline
+                acceleration and customer engagement.
               </p>
             </div>
           </div>
@@ -126,12 +95,11 @@
 
         <div class="row g-3 mt-3">
           <div class="col-12">
-            <div class="h-100 p-3 rounded bg-white border">
+            <div class="h-100 p-3 rounded bg-white border shadow-sm">
               <p class="mb-0 small">
-                Analytical and decisive, skilled at handling complex and
-                ambiguous situations through systematic prioritisation,
-                data-led decision-making, and clear strategic planning aligned
-                with organisational objectives.
+                Analytical and decisive, skilled at handling complex and ambiguous situations
+                through systematic prioritisation, data-led decision-making, and clear strategic
+                planning aligned with organisational objectives.
               </p>
             </div>
           </div>
@@ -152,47 +120,41 @@
 
           <ul class="ps-3 small">
             <li class="mb-2">
-              Promoted following the success of a strategic partnerships
-              assignment, with continued ownership across partner-influenced
-              pipeline, mid-market GTM strategy, and outbound innovation.
+              Promoted following success in a strategic partnerships assignment, maintaining
+              ownership across partner-influenced pipeline, mid-market GTM strategy, and outbound
+              innovation.
             </li>
-
             <li class="mb-2">
-              Appointed AI Pipeline Generation Advisor, designing and delivering
-              scalable outbound frameworks across EMEA. Led global enablement on
-              AI-led personalisation strategies that drove a 20% uplift in
-              conversion and were adopted across the GTM organisation.
+              Appointed AI Pipeline Generation Advisor, designing and delivering scalable outbound
+              frameworks across EMEA. Led enablement on AI-led personalisation strategies that
+              increased conversion rates by 20%.
             </li>
-
             <li class="mb-2">
-              Continued to drive partner-aligned pipeline initiatives, applying
-              AI insights and co-sell strategies to increase pipeline velocity
-              and improve performance across the EMEA partner ecosystem.
+              Drove partner-aligned pipeline initiatives using AI insights and co-sell strategies
+              to improve pipeline velocity and ecosystem performance.
             </li>
-
             <li class="mb-2">
-              Delivered strategic pipeline reviews to GTM and partner
-              leadership, shaping outbound priorities, identifying growth gaps,
-              and aligning regional activity to commercial goals.
+              Delivered strategic pipeline reviews to GTM and partner leadership, shaping
+              priorities, identifying growth gaps, and aligning activities with commercial goals.
             </li>
           </ul>
         </article>
       </section>
 
       <!-- Education -->
-      <section class="mb-5">
+      <section>
         <h2 class="h4 mb-3 fw-semibold">Education</h2>
 
         <ul class="ps-3 small">
           <li class="mb-3">
-            <strong>2023 – Financial Analysis and Management Accounting</strong>
-            — The London School of Economics<br />
+            <strong>2023 – Financial Analysis and Management Accounting</strong> — The London
+            School of Economics<br />
             Grade: First class honours
           </li>
 
           <li class="mb-3">
-            <strong>2015–2019 – Bachelor of Business Studies and Economics (Hons)</strong>,
-            Dublin City University<br />
+            <strong>2015–2019 – Bachelor of Business Studies and Economics (Hons)</strong>, Dublin
+            City University<br />
             Grade: Upper second-class honours
           </li>
 
@@ -204,14 +166,14 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Shared footer -->
     <footer class="py-4 bg-white border-top text-center small text-muted">
       <div class="container">
-        <p class="mb-0">© Jeffrey Blake</p>
+        <p class="mb-0"></p>
       </div>
     </footer>
 
-    <!-- Bootstrap JS bundle -->
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
